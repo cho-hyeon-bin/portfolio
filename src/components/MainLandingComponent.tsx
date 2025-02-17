@@ -9,13 +9,13 @@ const MainLandingComponent: React.FC = () => {
 			} else {
 				console.log("test")
 			}
-		}, 4000);
+		}, 5000);
 		return () => clearTimeout(timer);
 	}, []);
 
 	return (
 		<div ref={netflixIntroRef} id="container">
-			<div className="netflixintro" data-letter="N">
+			<div className="netflixintro" data-letter="H">
 				<div className="helper-1">
 					<div className="effect-brush">
 						<span className="fur-31"></span>
@@ -116,75 +116,75 @@ const MainLandingComponent: React.FC = () => {
 						<span className="fur-1"></span>
 					</div>
 				</div>
-			<div className="helper-3">
-				<div className="effect-brush">
-					<span className="fur-31"></span>
-					<span className="fur-30"></span>
-					<span className="fur-29"></span>
-					<span className="fur-28"></span>
-					<span className="fur-27"></span>
-					<span className="fur-26"></span>
-					<span className="fur-25"></span>
-					<span className="fur-24"></span>
-					<span className="fur-23"></span>
-					<span className="fur-22"></span>
-					<span className="fur-21"></span>
-					<span className="fur-20"></span>
-					<span className="fur-19"></span>
-					<span className="fur-18"></span>
-					<span className="fur-17"></span>
-					<span className="fur-16"></span>
-					<span className="fur-15"></span>
-					<span className="fur-14"></span>
-					<span className="fur-13"></span>
-					<span className="fur-12"></span>
-					<span className="fur-11"></span>
-					<span className="fur-10"></span>
-					<span className="fur-9"></span>
-					<span className="fur-8"></span>
-					<span className="fur-7"></span>
-					<span className="fur-6"></span>
-					<span className="fur-5"></span>
-					<span className="fur-4"></span>
-					<span className="fur-3"></span>
-					<span className="fur-2"></span>
-					<span className="fur-1"></span>
+				<div className="helper-3">
+					<div className="effect-brush">
+						<span className="fur-31"></span>
+						<span className="fur-30"></span>
+						<span className="fur-29"></span>
+						<span className="fur-28"></span>
+						<span className="fur-27"></span>
+						<span className="fur-26"></span>
+						<span className="fur-25"></span>
+						<span className="fur-24"></span>
+						<span className="fur-23"></span>
+						<span className="fur-22"></span>
+						<span className="fur-21"></span>
+						<span className="fur-20"></span>
+						<span className="fur-19"></span>
+						<span className="fur-18"></span>
+						<span className="fur-17"></span>
+						<span className="fur-16"></span>
+						<span className="fur-15"></span>
+						<span className="fur-14"></span>
+						<span className="fur-13"></span>
+						<span className="fur-12"></span>
+						<span className="fur-11"></span>
+						<span className="fur-10"></span>
+						<span className="fur-9"></span>
+						<span className="fur-8"></span>
+						<span className="fur-7"></span>
+						<span className="fur-6"></span>
+						<span className="fur-5"></span>
+						<span className="fur-4"></span>
+						<span className="fur-3"></span>
+						<span className="fur-2"></span>
+						<span className="fur-1"></span>
+					</div>
 				</div>
-			</div>
-			<div className="helper-4">
-				<div className="effect-brush">
-					<span className="fur-31"></span>
-					<span className="fur-30"></span>
-					<span className="fur-29"></span>
-					<span className="fur-28"></span>
-					<span className="fur-27"></span>
-					<span className="fur-26"></span>
-					<span className="fur-25"></span>
-					<span className="fur-24"></span>
-					<span className="fur-23"></span>
-					<span className="fur-22"></span>
-					<span className="fur-21"></span>
-					<span className="fur-20"></span>
-					<span className="fur-19"></span>
-					<span className="fur-18"></span>
-					<span className="fur-17"></span>
-					<span className="fur-16"></span>
-					<span className="fur-15"></span>
-					<span className="fur-14"></span>
-					<span className="fur-13"></span>
-					<span className="fur-12"></span>
-					<span className="fur-11"></span>
-					<span className="fur-10"></span>
-					<span className="fur-9"></span>
-					<span className="fur-8"></span>
-					<span className="fur-7"></span>
-					<span className="fur-6"></span>
-					<span className="fur-5"></span>
-					<span className="fur-4"></span>
-					<span className="fur-3"></span>
-					<span className="fur-2"></span>
-					<span className="fur-1"></span>
-				</div>
+				<div className="helper-4">
+					<div className="effect-brush">
+						<span className="fur-31"></span>
+						<span className="fur-30"></span>
+						<span className="fur-29"></span>
+						<span className="fur-28"></span>
+						<span className="fur-27"></span>
+						<span className="fur-26"></span>
+						<span className="fur-25"></span>
+						<span className="fur-24"></span>
+						<span className="fur-23"></span>
+						<span className="fur-22"></span>
+						<span className="fur-21"></span>
+						<span className="fur-20"></span>
+						<span className="fur-19"></span>
+						<span className="fur-18"></span>
+						<span className="fur-17"></span>
+						<span className="fur-16"></span>
+						<span className="fur-15"></span>
+						<span className="fur-14"></span>
+						<span className="fur-13"></span>
+						<span className="fur-12"></span>
+						<span className="fur-11"></span>
+						<span className="fur-10"></span>
+						<span className="fur-9"></span>
+						<span className="fur-8"></span>
+						<span className="fur-7"></span>
+						<span className="fur-6"></span>
+						<span className="fur-5"></span>
+						<span className="fur-4"></span>
+						<span className="fur-3"></span>
+						<span className="fur-2"></span>
+						<span className="fur-1"></span>
+					</div>
 				</div>
 			</div>
 		</div>
