@@ -1,14 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Header from '@/components/Header.tsx';
+import Footer from '@/components/Footer.tsx';
 
 const Layout: React.FC = () => {
 	return (
 		<div className="layout">
-			{/* <h1>헤더</h1> */}
+			<Header />
 			<main className="main-content">
 				<Outlet />
 			</main>
-			{/* <h1>푸터</h1> */}
+			<Footer/>
 		</div>
 	);
 };
