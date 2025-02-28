@@ -1,0 +1,338 @@
+@use "sass:list";
+@use "sass:meta";
+@use "variables";
+
+@mixin size($width: null, $height: null) {
+  $width_attr: width, max, min;
+  $height_attr: height, max, min;
+
+  @if meta.type-of($width) == "list" {
+    @if meta.type-of(list.nth($width, 1)) == "string" {
+      @each $attr in $width_attr {
+        $i: list.index($width, $attr);
+        @if $i {
+          @if $attr == width {
+            width: list.nth($width, $i + 1);
+          } @else {
+            #{$attr}-width: list.nth($width, $i + 1);
+          }
+        }
+      }
+    } @else {
+      @for $i from 1 through list.length($width) {
+        @if $i == 1 {
+          width: list.nth($width, 1);
+        } @else {
+          #{list.nth($width_attr, $i)}-width: list.nth($width, $i);
+        }
+      }
+    }
+  } @else {
+    width: $width;
+  }
+
+  @if meta.type-of($height) == "list" {
+    @if meta.type-of(list.nth($height, 1)) == "string" {
+      @each $attr in $height_attr {
+        $i: list.index($height, $attr);
+        @if $i {
+          @if $attr == height {
+            height: list.nth($height, $i + 1);
+          } @else {
+            #{$attr}-height: list.nth($height, $i + 1);
+          }
+        }
+      }
+    } @else {
+      @for $i from 1 through list.length($height) {
+        @if $i == 1 {
+          height: list.nth($height, 1);
+        } @else {
+          #{list.nth($height_attr, $i)}-height: list.nth($height, $i);
+        }
+      }
+    }
+  } @else {
+    height: $height;
+  }
+}
+
+@mixin flex-box($jfc: null, $agn: null, $gap-width: null, $gap-vertical: null) {
+  display: flex;
+  @if $jfc != null {
+    justify-content: $jfc;
+  } @else {
+    justify-content: flex-start;
+  }
+
+  @if $agn != null {
+    align-items: $agn;
+  } @else {
+    align-items: flex-start;
+  }
+
+  @if ($gap-vertical != null or $gap-width != null) {
+    gap: $gap-vertical $gap-width;
+  }
+}
+
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin margin($args: 0) {
+  $null-check: false;
+
+  @if meta.type-of($args) == "list" {
+    @if meta.type-of(list.nth($args, 1)) == "string" {
+      @each $attr in top, right, bottom, left {
+        $i: list.index($args, $attr);
+        @if $i {
+          margin-#{$attr}: list.nth($args, $i + 1);
+        }
+      }
+    } @else {
+      $args-length: list.length($args);
+      @for $i from 1 through $args-length {
+        @if list.nth($args, $i) == null {
+          $null-check: true;
+        }
+      }
+      @if $null-check {
+        @if $args-length == 2 {
+          margin: list.nth($args, 1) list.nth($args, 2);
+        } @else if $args-length == 3 {
+          margin: list.nth($args, 1) list.nth($args, 2) list.nth($args, 3);
+        } @else {
+          margin: list.nth($args, 1) list.nth($args, 2) list.nth($args, 3) list.nth($args, 4);
+        }
+      } @else {
+        @if $args-length == 2 {
+          $m-t-b: list.nth($args, 1);
+          $m-r-l: list.nth($args, 2);
+          margin: $m-t-b $m-r-l;
+        } @else if $args-length == 3 {
+          $m-t: list.nth($args, 1);
+          $m-r-l: list.nth($args, 2);
+          $m-b: list.nth($args, 3);
+          margin: $m-t $m-r-l $m-b;
+        } @else {
+          $m-t: list.nth($args, 1);
+          $m-r: list.nth($args, 2);
+          $m-b: list.nth($args, 3);
+          $m-l: list.nth($args, 4);
+          margin: $m-t $m-r $m-b $m-l;
+        }
+      }
+    }
+  } @else {
+    margin: $args;
+  }
+}
+
+@mixin padding($args: 0) {
+  $null-check: false;
+
+  @if meta.type-of($args) == "list" {
+    @if meta.type-of(list.nth($args, 1)) == "string" {
+      @each $attr in top, right, bottom, left {
+        $i: list.index($args, $attr);
+        @if $i {
+          padding-#{$attr}: list.nth($args, $i + 1);
+        }
+      }
+    } @else {
+      $args-length: list.length($args);
+      @for $i from 1 through $args-length {
+        @if list.nth($args, $i) == null {
+          $null-check: true;
+        }
+      }
+      @if $null-check {
+        @if $args-length == 2 {
+          padding: list.nth($args, 1) list.nth($args, 2);
+        } @else if $args-length == 3 {
+          padding: list.nth($args, 1) list.nth($args, 2) list.nth($args, 3);
+        } @else {
+          padding: list.nth($args, 1) list.nth($args, 2) list.nth($args, 3) list.nth($args, 4);
+        }
+      } @else {
+        @if $args-length == 2 {
+          $m-t-b: list.nth($args, 1);
+          $m-r-l: list.nth($args, 2);
+          padding: $m-t-b $m-r-l;
+        } @else if $args-length == 3 {
+          $m-t: list.nth($args, 1);
+          $m-r-l: list.nth($args, 2);
+          $m-b: list.nth($args, 3);
+          padding: $m-t $m-r-l $m-b;
+        } @else {
+          $m-t: list.nth($args, 1);
+          $m-r: list.nth($args, 2);
+          $m-b: list.nth($args, 3);
+          $m-l: list.nth($args, 4);
+          padding: $m-t $m-r $m-b $m-l;
+        }
+      }
+    }
+  } @else {
+    padding: $args;
+  }
+}
+
+@mixin border($value: null, $prop: null) {
+  @if $value != null {
+    @if $prop == null {
+      border: $value;
+    } @else {
+      @each $attr in top, right, bottom, left {
+        $i: list.index($prop, $attr);
+        @if $i {
+          border-#{$attr}: $value;
+        }
+      }
+    }
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin background(
+  $image: null,
+  $repeat: null,
+  $position: null null,
+  $color: null
+) {
+  @if $color !=
+    null and
+    $image !=
+    null and
+    $repeat !=
+    null and
+    list.nth($position, 1) !=
+    null and
+    list.nth($position, 2) !=
+    null
+  {
+    background: $color url($image) $repeat $position;
+  } @else {
+    @if $color != null {
+      background-color: $color;
+    }
+    @if $image != null {
+      background-image: url($image);
+    }
+    @if $repeat != null {
+      background-repeat: $repeat;
+    }
+    @if $position != null {
+      background-position: $position;
+    }
+  }
+}
+
+@mixin box-sizing($type: content-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin box-shadow($type) {
+  -webkit-box-shadow: $type;
+  -moz-box-shadow: $type;
+  box-shadow: $type;
+}
+
+@mixin ellipse($truncation-boundary: null, $line: null) {
+  @if $truncation-boundary != null {
+    max-width: $truncation-boundary;
+  }
+  @if $line != null {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      display: block;
+    }
+  } @else {
+    display: block;
+    white-space: nowrap;
+  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin prefix($prop, $value, $vendors: webkit moz ms o) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      -#{$vendor}-#{$prop}: #{$value};
+    }
+  }
+  #{$prop}: #{$value};
+}
+
+@mixin font-face($name, $file, $weight) {
+  @font-face {
+    font-family: "#{$name}";
+    font-weight: #{$weight};
+    src: url("@/assets/fonts/#{$file}.otf");
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{variables.$screen-mobile}) and (max-width: #{variables.$screen-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{variables.$screen-tablet}) and (max-width: #{$screen-size - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{variables.$screen-size-base}) {
+    @content;
+  }
+}

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import MainLandingComponent from '@/components/MainLandingComponent.tsx';
 const HomeComponent: React.FC = () => {
 	useEffect(() => {
 		
@@ -7,7 +6,6 @@ const HomeComponent: React.FC = () => {
 
 	return (
 		<div>
-			<MainLandingComponent />
 			<p>test</p>
 		</div>
 	);

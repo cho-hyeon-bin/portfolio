@@ -1,22 +1,17 @@
-
+import { Link } from 'react-router-dom';
+import '@/sass/common/components/header.sass';
 function Header() {
 	return (
-		<div>
-			<div>
-				<div className="logo">
-					<img src="/src/assets/image/logo.svg" alt="logo" />
-				</div>
-				<ul>
-					<li>Home</li>
-					<li>Project</li>
-					<li>Skill</li>
-				</ul>
-			</div>
-			<div>
-				<button type="button"></button>
-				<button type="button"></button>
+		<div className="header-wrap">
+			<div className="header-box">
 				<div>
-					<img src="/src/assets/image/profile-blue.png" alt="profile-blue" />
+					CHO HYEON BIN PORTFOLIO
+				</div>
+				<div>
+					<Link to="/">ABOUT ME</Link>
+					<Link to="/">PROJECT</Link>
+					<Link to="/">SKILLS</Link>
+					<Link to="/">CONTACT</Link>
 				</div>
 			</div>
 		</div>
