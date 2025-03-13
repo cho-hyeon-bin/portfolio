@@ -1,4 +1,4 @@
-import HomeComponent from '@/pages/home';
+import Index from '@/pages/index';
 import Layout from '@/components/layout';
 
 const routes = [
@@ -6,7 +6,7 @@ const routes = [
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <HomeComponent /> },
+      { index: true, element: <Index /> },
     ],
   },
 ];
