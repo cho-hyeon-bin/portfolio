@@ -3,20 +3,13 @@ import gsap from 'gsap';
 import '@/sass/view/home.sass'
 const HomeComponent = () => {
 	useEffect(() => {
-		// gsap.fromTo('.rainbow2', 
-		// 	{ x: '-100vw' },
-		// 	{
-		// 		x: 0,
-		// 		duration: 2,
-		// 		ease: 'power3.out',
-		// 		opacity: 1,
-		// 	}
-		// );
-		// gsap.to('.portfolio', {
-		// 	rotation: 360,
-		// 	duration: 2, 
-		// 	ease: 'power1.inOut'
-		// });
+		gsap.to('.portfolio', {
+			scale: 0.8,
+			duration: 1,
+			ease: 'power1.inOut',
+			yoyo: true,
+			repeat: -1
+		});
 	}, []);
 	return (
 		<section className="main-wrap">	
