@@ -1,0 +1,81 @@
+.skill-wrap
+	width: calc( 100% - 160px )
+	height: 1000px
+	padding: 80px
+	display: flex
+	align-items: flex-start
+	justify-content: flex-start
+	.title
+		span
+			display: block
+			margin-bottom: 30px
+			font-size: 30px
+			font-weight: 700
+			letter-spacing: -0.5px
+			position: relative
+			writing-mode: sideways-lr
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				top: -2px
+				right: -16px
+				width: 7px
+				height: 80px
+				background-color: #000
+	.skill-container
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-wrap: wrap
+		gap: 30px
+		padding-left: 100px
+		.skill-container
+			.slick-slider
+				padding: 20px 0
+
+			.slick-dots
+				bottom: -30px
+
+				li button:before
+				color: #666
+
+				li.slick-active button:before
+					color: #000
+
+			.slick-prev, .slick-next
+				z-index: 1
+
+				&:before
+					color: #000
+
+			.slick-prev
+				left: -25px
+
+			.slick-next
+				right: -25px
+		.skill-box
+			width: 280px
+			border-radius: 14px
+			border: 1px solid rgba(0, 0, 0, 0.15)
+			display: flex
+			align-items: center
+			padding: 14px 20px
+			img
+				width: 30px
+				height: 30px
+
+			div
+				border-left: 2px solid #a1a1a1
+				padding-left: 15px
+				margin-left: 15px
+				p
+					&:first-of-type
+						font-size: 16px
+						font-weight: 500
+					&:last-of-type
+						font-size: 12px
+						font-weight: 100
+						padding-top: 5px
+						white-space: nowrap

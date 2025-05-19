@@ -1,3 +1,55 @@
 .main-wrap
 	width: 100%
 	min-height: 1000px
+	border-top: solid #000 4px
+	border-bottom: 1px solid #E7E7E7
+	background-color: #fff
+	padding-top: 43px
+	.header-box
+		padding: 0 80px
+		display: flex
+		justify-content: space-between
+		span
+			font-size: 30px
+			font-weight: 800
+		div
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			justify-content: center
+			span
+				&:first-of-type
+					font-size: 20px
+					font-weight: 600
+					letter-spacing: -0.5px
+					position: relative
+					&::after
+						content: ""
+						display: block
+						position: absolute
+						bottom: -7px
+						width: 18px
+						height: 2.5px
+						background-color: #000
+				&:last-of-type
+					font-size: 14px
+					font-weight: 300
+					padding-top: 6px
+	ul
+		display: flex
+		flex-direction: column
+		gap: 25px
+		position: fixed
+		padding-left: 20px
+		top: 50%
+		li
+			writing-mode: sideways-lr
+	.main-title
+		width: 100%
+		min-height: 1000px
+		display: flex
+		align-items: center
+		justify-content: center
+		p, span
+			font-family: DotGothic16
+			font-size: 60px
