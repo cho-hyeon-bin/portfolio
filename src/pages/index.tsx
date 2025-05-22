@@ -1,6 +1,8 @@
 import Home from '@/pages/home.tsx';
 import About from '@/pages/about.tsx';
 import Skill from '@/pages/skill.tsx';
+import Contact from '@/pages/contact.tsx';
+import Projects from '@/pages/projects.tsx';
 
 const Index = () => {
 	return (
@@ -8,6 +10,8 @@ const Index = () => {
 			<Home />
 			<About />
 			<Skill />
+			<Projects />
+			<Contact />
 		</div>
 	);
 };

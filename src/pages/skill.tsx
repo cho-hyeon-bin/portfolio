@@ -6,10 +6,13 @@ const SkillComponent = () => {
 	const settings = {
 		dots: false,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 2,
 		swipeToSlide: true,
 		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		cssEase: 'linear'
 	};
 	return (
 		<section className="skill-wrap">
