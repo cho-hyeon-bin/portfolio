@@ -1,10 +1,15 @@
-.skill-wrap
-	width: calc( 100% - 160px )
-	padding: 80px
+.skill-container
+	width: 100%
 	display: flex
-	align-items: center
 	justify-content: center
 	border-bottom: 1px solid #E7E7E7
+.skill-wrap
+	width: calc( 100% - 160px )
+	max-width: 1500px
+	padding: 80px
+	display: flex
+	align-items: flex-start
+	justify-content: center
 	.title
 		span
 			display: block
@@ -24,9 +29,12 @@
 				width: 3px
 				height: 80px
 				background-color: #EEEEEE
-	.skill-container
-		width: 1600px
+	.skill-list
+		width: 100%
 		padding-left: 100px
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
 		.skill-box
 			width: 330px !important
 			border-radius: 14px

@@ -15,125 +15,176 @@ const SkillComponent = () => {
 		cssEase: 'linear'
 	};
 	return (
-		<section className="skill-wrap">
-			<div className="title">
-				<span>skill & tool</span>
-			</div>
-			<div className="skill-container">
-				<Slider {...settings}>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+		<section className="skill-container">
+			<div className="skill-wrap">
+				<div className="title">
+					<span>skill & tool</span>
+				</div>
+				<div className="skill-list">
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-					<div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html1</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
-						</div>
-						<div className="skill-box">
-							<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
-							<div>
-								<p>html2</p>
-								<p>Responsive websites with fast loading</p>
-							</div>
+					<div className="skill-box">
+						<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+						<div>
+							<p>html1</p>
+							<p>Responsive websites with fast loading</p>
 						</div>
 					</div>
-				</Slider>
+					{/* <Slider {...settings}>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html1</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+							<div className="skill-box">
+								<img src="/src/assets/image/html-icon.svg" alt="html-icon" />
+								<div>
+									<p>html2</p>
+									<p>Responsive websites with fast loading</p>
+								</div>
+							</div>
+						</div>
+					</Slider> */}
+				</div>
 			</div>
 		</section>
 	);

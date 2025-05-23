@@ -1,5 +1,12 @@
+.about-container
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
 .about-wrap
 	width: calc( 100% - 160px )
+	max-width: 1500px
 	padding: 80px
 	display: flex
 	flex-direction: column
@@ -85,3 +92,42 @@
 							font-weight: 100
 							padding-top: 5px
 							white-space: nowrap
+.career-wrap
+	width: calc( 100% - 160px )
+	max-width: 1500px
+	padding: 80px
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	.title
+		span
+			display: block
+			margin-bottom: 30px
+			font-size: 30px
+			font-weight: 400
+			letter-spacing: -0.5px
+			position: relative
+			writing-mode: sideways-lr
+			color: #e7e7e7
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				top: 0px
+				right: -16px
+				width: 3px
+				height: 60px
+				background-color: #EEEEEE
+	.discription-box
+		width: 100%
+		padding-left: 100px
+		font-family: SUIT
+		p
+			a
+				font-size: 18px
+				font-weight: 800
+			&:last-of-type
+				font-size: 16px
+				font-weight: 500
+				padding-top: 30px
+				line-height: 20px
