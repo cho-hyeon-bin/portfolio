@@ -39,6 +39,13 @@ const HomeComponent = () => {
 		}
 	}, []);
 
+	const scrollTo = (selector: string) => {
+		const el = document.querySelector(selector);
+		if (el) {
+			(el as HTMLElement).scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+	};
+	
 	return (
 		<section className="main-wrap">	
 			<div className="header-box">
@@ -49,11 +56,11 @@ const HomeComponent = () => {
 				</div>
 			</div>
 			<ul>
-				<li><Link to="/">home</Link></li>
-				<li><Link to="/about">about me</Link></li>
-				<li><Link to="/projects">projects</Link></li>
-				<li><Link to="/skill">skill</Link></li>
-				<li><Link to="/contact">contact</Link></li>
+				<li><button type="button" onClick={() => scrollTo('.main-wrap')}>home</button></li>
+				<li><button type="button" onClick={() => scrollTo('.about-container')}>about me</button></li>
+				<li><button type="button" onClick={() => scrollTo('.projects-container')}>projects</button></li>
+				<li><button type="button" onClick={() => scrollTo('.skill-container')}>skill</button></li>
+				<li><button type="button" onClick={() => scrollTo('.contact-wrap')}>contact</button></li>
 			</ul>
 			<div className="main-title">
 				<p ref={textRef}>front-end.web(developer)</p>

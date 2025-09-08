@@ -1,0 +1,66 @@
+[
+  {
+    "title": "ONOFFMIX",
+    "imageSrc": "/src/assets/image/onoffmix-new.png",
+    "imageAlt": "onoffmix-new",
+    "skills": [
+      "HTML5",
+      "Vue",
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "JQuery",
+      "CSS3",
+      "Sass",
+      "Tailwind"
+    ]
+  },
+  {
+    "title": "MAKETBANG",
+    "imageSrc": "/src/assets/image/marketbang-new.png",
+    "imageAlt": "onoffmix",
+    "skills": ["Vue", "JavaScript", "Pinia", "Sass", "Bootstrap"]
+  },
+  {
+    "title": "KOITA 기술경영인 하계포럼",
+    "imageSrc": "/src/assets/image/koita-new.png",
+    "imageAlt": "onoffmix",
+    "skills": ["HTML5", "JavaScript", "JQuery", "CSS3", "Sass", "Bootstrap"]
+  },
+  {
+    "title": "KSA CEO Forum",
+    "imageSrc": "/src/assets/image/ksa-new.png",
+    "imageAlt": "onoffmix",
+    "skills": ["HTML5", "JavaScript", "JQuery", "CSS3", "Sass", "Bootstrap"]
+  },
+  {
+    "title": "PROMICE",
+    "imageSrc": "/src/assets/image/pco-new.png",
+    "imageAlt": "onoffmix",
+    "skills": ["Vue", "JavaScript", "Vuex", "Sass"]
+  },
+  {
+    "title": "청풍케이블카",
+    "imageSrc": "/src/assets/image/chungpung.png",
+    "imageAlt": "chungpung",
+    "skills": ["Vue", "JavaScript", "Sass"]
+  },
+  {
+    "title": "1004요트",
+    "imageSrc": "/src/assets/image/1004.png",
+    "imageAlt": "1004",
+    "skills": ["React", "JavaScript", "Sass", "Tailwind"]
+  },
+  {
+    "title": "JM Connected",
+    "imageSrc": "/src/assets/image/jmconnected.png",
+    "imageAlt": "jmconnected",
+    "skills": ["Vue", "JavaScript", "Sass", "Tailwind"]
+  },
+  {
+    "title": "Portfolio",
+    "imageSrc": "/src/assets/image/onoffmix-new.png",
+    "imageAlt": "Portfolio",
+    "skills": ["React", "JavaScript", "TypeScript", "Sass"]
+  }
+]
