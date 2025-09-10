@@ -1,5 +1,4 @@
 import '@/sass/view/home.sass'
-import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { TextPlugin } from 'gsap/TextPlugin'
