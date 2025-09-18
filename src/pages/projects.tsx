@@ -4,6 +4,7 @@ import SkillTag from "@/components/SkillTag";
 import projects from "@/json/project.json";
 const ProjectsComponent = () => {
   const [showAll, setShowAll] = useState(false);
+  const [expandedTitle, setExpandedTitle] = useState<string | null>(null);
   const showProjects = showAll ? projects : projects.slice(0, 4);
   return (
     <section className="projects-container">
@@ -15,7 +16,11 @@ const ProjectsComponent = () => {
           <div className="project-list">
             {showProjects.map((p) => (
               <div className="test" key={p.title}>
-                <div className="project-box">
+                <div
+                  className={`project-box${
+                    expandedTitle === p.title ? " expanded" : ""
+                  }`}
+                >
                   <div className="flex-box">
                     <div className="img-box">
                       <img src={p.imageSrc} alt={p.imageAlt} />
@@ -29,15 +34,28 @@ const ProjectsComponent = () => {
                         <span>{p.title}</span>
                       )}
                       <SkillTag skills={p.skills} />
-                      <button>
-                        <span>see detail</span>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setExpandedTitle((prev) =>
+                            prev === p.title ? null : p.title
+                          )
+                        }
+                      >
+                        <span>
+                          {expandedTitle === p.title
+                            ? "hide description"
+                            : "see description"}
+                        </span>
                       </button>
                     </div>
                   </div>
                   <div
                     className="detail-box"
-                    dangerouslySetInnerHTML={{ __html: p.discripton }}
-                  ></div>
+                  >
+                    <span>{p.subtitle}</span>
+                    <div dangerouslySetInnerHTML={{ __html: p.discripton }}></div>
+                  </div>
                 </div>
               </div>
             ))}
