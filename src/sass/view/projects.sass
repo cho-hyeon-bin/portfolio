@@ -48,28 +48,28 @@
 		display: flex
 		flex-direction: row
 		max-width: 600px
-		transition: all .25s ease
 		&.expanded
-			width: 100%
-			max-width: 100%
-			flex-direction: row
+			position: relative
+			width: 600px
+			max-width: 600px
+			flex-direction: column
 			align-items: stretch
 			.flex-box
 				flex-direction: row
 				justify-content: flex-start
-			.img-box
-				margin-right: 30px
-				width: 380px
-				img
-					height: 260px
 			.detail-box
 				flex: 1
 				// height: auto
-				min-height: 260px
-				max-width: 1000px
+				width: 610px
+				height: 202px
+				border-radius: 5px
+				box-sizing: border-box
+				position: absolute
+				left: 0
+				background-color: #fcfcfc
+				min-height: 202px
+				max-width: 600px
 				opacity: 1
-				padding: 16px
-				transform: translateX(0)
 		.flex-box
 			display: flex
 			flex-direction: row
@@ -131,18 +131,49 @@
 						height: 2px
 						background-color: #000
 	.detail-box
-		display: block
-		width: auto
-		max-height: 200px
-		max-width: 0
-		opacity: 0
-		padding: 0
-		margin-left: 0
-		// height: auto
-		overflow: hidden
-		color: #222
 		position: relative
 		z-index: 9999999
+		overflow: hidden
+		display: block
+		width: auto
+		max-width: 0
+		max-height: 0
+		opacity: 0
+		padding: 25px 15px 0px 15px
+		color: #222
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 22px
+		transition: max-height 0.5s ease, transform 0.5s ease, opacity 0.5s ease
+		span
+			font-size: 18px
+			font-weight: 800
+			display: block
+		.discription
+			padding-top: 16px
+			line-height: 20px
+			height: 100px
+		.btn-box
+			display: flex
+			justify-content: center
+			button
+				span
+					display: block
+					margin-bottom: 0px
+					padding: 0
+					font-size: 15px
+					font-weight: 600
+					letter-spacing: 0px
+					position: relative
+					text-align: left
+					color: #000
+					&::after
+						content: ""
+						display: block
+						position: absolute
+						bottom: -5px
+						right: 2px
+						width: 15px
+						height: 3px
+						background-color: #000
 .more-btn
 	margin-top: 70px
 	span
