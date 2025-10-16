@@ -13,6 +13,7 @@ const AboutComponent = () => {
 				<div className="profile-box">
 					<div className="img-box">
 						<img src="/src/assets/image/profile.png" alt="profile" />
+						<a href="/src/assets/file/career.pdf" download="조현빈 경력기술서.pdf" className="dl-box"><span>RESUME</span></a>
 					</div>
 					<div>
 						<h1>프론트엔드 엔지니어 조현빈입니다</h1>

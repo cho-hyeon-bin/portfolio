@@ -40,13 +40,34 @@
 		width: 100%
 		padding-top: 80px
 		.img-box
-			width: 198px
-			height: 198px
-			border-radius: 50%
-			background-color: #DDEB9D
 			margin-right: 70px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 			img
-				width: 100%
+				width: 198px
+				height: 198px
+			.dl-box
+				display: flex
+				align-content: center
+				font-weight: 700
+				width: 70px
+				padding-top: 15px
+				span
+					display: flex
+					align-items: center
+					font-family: DungGeunMo
+					&::after
+						content: ""
+						margin-left: 3px
+						display: block
+						width: 20px
+						height: 20px
+						background-image: url("/src/assets/image/dl-icon.png")
+						background-size: 16px
+						background-repeat: no-repeat
+						background-position: center
 		div
 			max-width: 1000px
 			h1, p
