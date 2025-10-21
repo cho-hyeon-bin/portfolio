@@ -19,53 +19,52 @@ const ProjectsComponent = () => {
         <div className="project-flex-box">
           <div className="project-list">
             {showProjects.map((p) => (
-              <div key={p.title}>
-                <div
-                  className={`project-box${
-                    isExpanded(p.title) ? " expanded" : ""
-                  }`}
-                >
-                  <div className="flex-box">
-                    <div className="img-box">
-                      <img src={p.imageSrc} alt={p.imageAlt} />
-                    </div>
-                    <div className="discription-box">
-                      {p.url ? (
-                        <a href={p.url} target="_blank">
-                          <span className={p.url ? "has-url" : ""}>
-                            {p.title}
-                          </span>
-                        </a>
-                      ) : (
-                        <span>{p.title}</span>
-                      )}
-                      <SkillTag skills={p.skills} />
-                      <button
-                        type="button"
-                        onClick={() => toggleProjectExpand(p.title)}
-                      >
-                        <span>
-                          {isExpanded(p.title)
-                            ? "hide description"
-                            : "see description"}
-                        </span>
-                      </button>
-                    </div>
+              <div
+                key={p.title}
+                className={`project-box${
+                  isExpanded(p.title) ? " expanded" : ""
+                }`}
+              >
+                <div className="flex-box">
+                  <div className={'img-box ' + p.imgVer}>
+                    <img src={p.imageSrc} alt={p.imageAlt} />
                   </div>
-                  <div className="detail-box">
-                    <span>{p.subtitle}</span>
-                    <div
-                      className="discription"
-                      dangerouslySetInnerHTML={{ __html: p.description }}
-                    ></div>
-                    <div className="btn-box">
-                      <button
-                        type="button"
-                        onClick={() => toggleProjectExpand(p.title)}
-                      >
-                        <span>close</span>
-                      </button>
-                    </div>
+                  <div className="discription-box">
+                    {p.url ? (
+                      <a href={p.url} target="_blank">
+                        <span className={p.url ? "has-url" : ""}>
+                          {p.title}
+                        </span>
+                      </a>
+                    ) : (
+                      <span>{p.title}</span>
+                    )}
+                    <SkillTag skills={p.skills} />
+                    <button
+                      type="button"
+                      onClick={() => toggleProjectExpand(p.title)}
+                    >
+                      <span>
+                        {isExpanded(p.title)
+                          ? "hide description"
+                          : "see description"}
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div className="detail-box">
+                  <span>{p.subtitle}</span>
+                  <div
+                    className="discription"
+                    dangerouslySetInnerHTML={{ __html: p.description }}
+                  ></div>
+                  <div className="btn-box">
+                    <button
+                      type="button"
+                      onClick={() => toggleProjectExpand(p.title)}
+                    >
+                      <span>close</span>
+                    </button>
                   </div>
                 </div>
               </div>

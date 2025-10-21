@@ -117,9 +117,9 @@
 							padding-top: 5px
 							white-space: nowrap
 .career-wrap
-	width: calc( 100% - 160px )
+	width: calc( 100% - 240px )
 	max-width: 1500px
-	padding: 80px
+	padding: 80px 120px
 	display: flex
 	align-items: flex-start
 	justify-content: center
@@ -156,3 +156,133 @@
 				font-weight: 500
 				padding-top: 30px
 				line-height: 20px
+
+@media screen and ( max-width: 720px )
+	.about-container
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		background-color: #fff
+	.about-wrap
+		width: calc( 100% - 40px )
+		max-width: 100%
+		padding: 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+		// border-bottom: 1px solid #E7E7E7
+		.title
+			width: 100%
+			display: flex
+			justify-content: flex-start
+			span
+				color: #000
+				display: block
+				margin-bottom: 10px
+				font-size: 20px
+				font-weight: 700
+				letter-spacing: -0.5px
+				position: relative
+				&::after
+					content: ""
+					display: block
+					position: absolute
+					bottom: -13px
+					width: 90px
+					height: 5px
+					background-color: #000
+		.profile-box
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			width: 100%
+			padding-top: 80px
+			.img-box
+				margin-right: 0
+				margin-bottom: 20px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				img
+					width: 198px
+					height: 198px
+				.dl-box
+					display: flex
+					align-content: center
+					font-weight: 700
+					width: 70px
+					padding-top: 15px
+					span
+						display: flex
+						align-items: center
+						font-family: DungGeunMo
+						&::after
+							content: ""
+							margin-left: 3px
+							display: block
+							width: 20px
+							height: 20px
+							background-image: url("/src/assets/image/dl-icon.png")
+							background-size: 16px
+							background-repeat: no-repeat
+							background-position: center
+			div
+				max-width: 100%
+				h1, p
+					font-family: SUIT
+					color: #000
+					text-align: left
+				h1
+					font-size: 18px
+					font-family: DungGeunMo
+				p
+					font-size: 14px
+					padding-top: 15px
+					line-height: 20px
+	.career-wrap
+		width: calc( 100% - 30px )
+		max-width: 100%
+		padding: 0px
+		padding-top: 20px
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		.title
+			span
+				display: block
+				margin-bottom: 30px
+				font-size: 20px
+				font-weight: 500
+				letter-spacing: -0.5px
+				position: relative
+				writing-mode: horizontal-tb
+				color: #898989
+				&::after
+					content: ""
+					display: block
+					position: absolute
+					top: 23px
+					left: 2px
+					width: 30px
+					height: 2px
+					background-color: #898989
+		.discription-box
+			width: 100%
+			padding-left: 0px
+			font-family: SUIT
+			color: #000
+			p
+				a
+					font-size: 16px
+					font-weight: 800
+				&:last-of-type
+					font-size: 14px
+					font-weight: 500
+					padding-top: 30px
+					line-height: 20px

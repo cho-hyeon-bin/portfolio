@@ -10,8 +10,8 @@ const HomeComponent = () => {
 
 	useEffect(() => {
 		if (textRef.current) {
-			const text = "front-end.web(developer)"; // 직접 텍스트 지정
-			textRef.current.textContent = ''; // 초기 텍스트 비우기
+			const text = "front-end.web(developer)";
+			textRef.current.textContent = ''; 
 			
 			gsap.set(cursorRef.current, { opacity: 0 });
 			gsap.to(textRef.current, {
@@ -19,7 +19,7 @@ const HomeComponent = () => {
 				text: text,
 				ease: "none",
 				onComplete: () => {
-					console.log("애니메이션 완료"); // 디버깅을 위한 로그 추가
+					console.log("애니메이션 완료");
 					gsap.to(cursorRef.current, {
 						opacity: 1,
 						duration: 0.3,

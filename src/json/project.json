@@ -6,6 +6,7 @@
     "description": "이벤트 개설부터 홍보, 예약-결제, 좌석 배치까지 전체 행사 운영 과정을 원스톱으로 지원하는 종합 이벤트 테크 플랫폼입니다. 2023년부터는 레저 티켓 구매 서비스도 통합하여 여가/체험의 수요까지 포괄하도록 확장했습니다.",
     "imageSrc": "/src/assets/image/onoffmix-new.png",
     "imageAlt": "onoffmix-new",
+    "imgVer": "ver1",
     "skills": [
       "HTML5",
       "Vue",
@@ -25,6 +26,7 @@
     "description": "소매상(점주)이 다양한 수입사 와인을 온라인으로 간편하게 발주·찜·장바구니 기능을 활용할 수 있으며, 수입사와의 실시간 발주 처리 및 관리자 대시보드 제공으로 운영 효율을 높입니다.",
     "imageSrc": "/src/assets/image/marketbang-new.png",
     "imageAlt": "onoffmix",
+    "imgVer": "ver1",
     "skills": ["Vue", "JavaScript", "Pinia", "Sass", "Bootstrap"]
   },
   {
@@ -34,6 +36,7 @@
     "description": "산업계 기술경영인 및 관련 기관 담당자들을 위해 하계 포럼 신청 페이지를 개발. 사용자 측면에서는 기업·참가자 정보 입력, 숙박/항공/호텔 예약 기능을 제공하며, 관리자 페이지에서는 참가자 현황, 결제 현황, FAQ 및 갤러리 관리 기능을 통합 관리합니다.",
     "imageSrc": "/src/assets/image/koita-new.png",
     "imageAlt": "onoffmix",
+    "imgVer": "ver1",
     "skills": ["HTML5", "JavaScript", "JQuery", "CSS3", "Sass", "Bootstrap"]
   },
   {
@@ -43,6 +46,7 @@
     "description": "기업 최고경영자(CEO) 대상의 하계 포럼 신청 페이지를 개발. 사용자 쪽에서는 연사 및 프로그램 정보 열람, 참가 신청/확인, 브로셔 다운로드 등이 가능하며, 관리자 측에서는 연사 관리, 공지/갤러리/FAQ/참가자 명단 관리 기능을 담당합니다.",
     "imageSrc": "/src/assets/image/ksa-new.png",
     "imageAlt": "onoffmix",
+    "imgVer": "ver1",
     "skills": ["HTML5", "JavaScript", "JQuery", "CSS3", "Sass", "Bootstrap"]
   },
   {
@@ -52,6 +56,7 @@
     "description": "채용 및 취업 매칭 플랫폼으로, 구직자 이력서 등록과 기업 채용 공고 게시, 소셜 로그인 및 프로필·지원 상태 관리 기능을 제공. 관리자는 회원·채용 공고·채용 프로세스 전반(지원자 관리, 알림 등)을 운영할 수 있는 기능을 통합했습니다.",
     "imageSrc": "/src/assets/image/pco-new.png",
     "imageAlt": "onoffmix",
+    "imgVer": "ver1",
     "skills": ["Vue", "JavaScript", "Vuex", "Sass"]
   },
   {
@@ -61,6 +66,7 @@
     "description": "충북 제천 청풍호와 남한강의 풍경을 감상할 수 있는 케이블카 관광 서비스 사이트를 개발. 사용자 페이지에서는 운행 시간·요금·예약 기능을 제공하고, 관리자 페이지에서는 운행 일정, 예약 관리, 공지사항 등록 기능을 지원합니다.",
     "imageSrc": "/src/assets/image/chungpung.png",
     "imageAlt": "chungpung",
+    "imgVer": "ver2",
     "skills": ["Vue", "JavaScript", "Sass"]
   },
   {
@@ -70,6 +76,7 @@
     "description": "요트 관광 소개 및 예약을 위한 웹사이트를 제작. 사용자 페이지에서는 관광 정보와 갤러리를 제공하며, 관리자 페이지에서는 뉴스·공지사항·이미지 갤러리 등록과 관리 기능을 지원합니다.",
     "imageSrc": "/src/assets/image/1004.png",
     "imageAlt": "1004",
+    "imgVer": "ver2",
     "skills": ["React", "JavaScript", "Sass", "Tailwind"]
   },
   {
@@ -79,6 +86,7 @@
     "description": "국제 행사(엑스포, 박람회 등)에서 통역사를 바이어·셀러와 매칭해주는 서비스 개발. 사용자 측에서는 통역사 프로필 열람, 매칭 요청, 상담일지 작성이 가능하며, 관리자 측에서는 사용자 등록, 매칭 관리, 상담 기록 관리 기능을 제공합니다.",
     "imageSrc": "/src/assets/image/jmconnected.png",
     "imageAlt": "jmconnected",
+    "imgVer": "ver2",
     "skills": ["Vue", "JavaScript", "Sass", "Tailwind"]
   },
   {
@@ -88,6 +96,7 @@
     "description": "개인 포트폴리오 사이트입니다.",
     "imageSrc": "/src/assets/image/onoffmix-new.png",
     "imageAlt": "Portfolio",
+    "imgVer": "ver1",
     "skills": ["React", "JavaScript", "TypeScript", "Sass"]
   }
 ]

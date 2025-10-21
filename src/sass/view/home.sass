@@ -58,3 +58,57 @@
 			font-family: DotGothic16
 			font-size: 60px
 			color: #000
+
+@media screen and (max-width: 720px)
+	.main-wrap
+		min-height: auto
+		padding-top: 10px
+		box-sizing: border-box
+		.header-box
+			padding: 0 15px
+			box-sizing: border-box
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			span
+				font-size: 16px
+				font-weight: 800
+				color: #222
+			div
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				justify-content: center
+				span
+					color: #000
+					&:first-of-type
+						font-size: 16px
+						font-weight: 600
+						letter-spacing: -0.5px
+						position: relative
+						&::after
+							content: ""
+							display: block
+							position: absolute
+							bottom: -7px
+							width: 18px
+							height: 2.5px
+							background-color: #000
+					&:last-of-type
+						font-size: 12px
+						font-weight: 300
+						padding-top: 6px
+		ul
+			display: none
+		.main-title
+			width: 100%
+			min-height: 100vh
+			box-sizing: border-box
+			padding: 0
+			p, span
+				font-family: DotGothic16
+				font-size: 20px
+				color: #000
+				word-wrap: break-word
+				overflow-wrap: break-word
