@@ -12,7 +12,7 @@ const AboutComponent = () => {
           <div className="img-box">
             <img src="/images/profile.png" alt="profile" />
             <a
-              href="/src/assets/file/career.pdf"
+              href="/career.pdf"
               download="조현빈 경력기술서.pdf"
               className="dl-box"
             >
