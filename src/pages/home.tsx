@@ -58,8 +58,8 @@ const HomeComponent = () => {
 				<li><button type="button" onClick={() => scrollTo('.main-wrap')}>home</button></li>
 				<li><button type="button" onClick={() => scrollTo('.about-container')}>about me</button></li>
 				<li><button type="button" onClick={() => scrollTo('.projects-container')}>projects</button></li>
-				<li><button type="button" onClick={() => scrollTo('.skill-container')}>skill</button></li>
-				<li><button type="button" onClick={() => scrollTo('.contact-wrap')}>contact</button></li>
+				{/* <li><button type="button" onClick={() => scrollTo('.skill-container')}>skill</button></li> */}
+				{/* <li><button type="button" onClick={() => scrollTo('.contact-wrap')}>contact</button></li> */}
 			</ul>
 			<div className="main-title">
 				<p ref={textRef}>front-end.web(developer)</p>
